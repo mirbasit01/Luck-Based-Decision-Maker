@@ -1,6 +1,7 @@
 'use client';
 import React, { useState } from 'react';
 import { Sparkles, Dices, Trophy, RefreshCw } from 'lucide-react';
+import { showToast } from "nextjs-toast-notify";
 
 export default function DecisionMaker() {
   const [screen, setScreen] = useState('input'); // input, battle, result
@@ -12,14 +13,20 @@ export default function DecisionMaker() {
   const [totalB, setTotalB] = useState(0);
   const [isAnimating, setIsAnimating] = useState(false);
 
-  const startDecision = () => {
-    if (!optionA.trim() || !optionB.trim()) {
-      alert('Please fill both options!');
-      return;
-    }
-    setScreen('battle');
-    runBattle();
-  };
+const startDecision = () => {
+  if (!optionA.trim() || !optionB.trim()) {
+    showToast.warning("Please fill both options!", {
+      position: "top-center",
+      transition: "bounceIn",
+      sound: true,
+      progress: true,
+    });
+    return;
+  }
+
+  setScreen("battle");
+  runBattle();
+};
 
   const generatePoints = () => {
     return Math.floor(Math.random() * 11); // 0 to 10
