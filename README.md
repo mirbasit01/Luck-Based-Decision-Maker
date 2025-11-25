@@ -3,8 +3,8 @@
 A fun and interactive Next.js web application that helps users make difficult decisions by leaving it up to fate! When you can't decide between two options, let luck determine the winner through a 3-round point battle system.
 
 ## ✨ Features
-![alt text](image.png)
-![alt text](image-1.png)
+
+
 
 - **Simple Decision Input**: Enter any two options you're struggling to choose between
 - **3-Round Battle System**: Each option receives random points (0-10) across 3 rounds
@@ -182,6 +182,7 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 **Mir Basit**
 - GitHub: [@mirbasit01](https://github.com/mirbasit01)
 - Project Link: [https://github.com/mirbasit01/Luck-Based-Decision-Maker](https://github.com/mirbasit01/Luck-Based-Decision-Maker)
+- Medium Link: [https://medium.com/@mirbasit01/eluck-based-decision-maker-3f884d2a6c16]
 
 ## 🙏 Acknowledgments
 
@@ -193,13 +194,12 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 ## 📸 Screenshots
 
 ### Input Screen
-*Enter your two options and let fate decide*
+![alt text](image.png)
 
 ### Battle Screen
-*Watch as points are revealed round by round with smooth animations*
-
+ ![alt text](image-2.png)
 ### Result Screen
-*See the winner with highlighted scores and celebration effects*
+![alt text](image-1.png)
 
 ## 🌟 Star History
 
